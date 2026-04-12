@@ -1,18 +1,18 @@
-﻿# 🎮 Quiz Web Game
+﻿#  Quiz Web Game
 
-## 📌 Descripció
+##  Descripció
 
 Aquest projecte és una aplicació web interactiva en forma de joc tipus *quiz*. L’usuari haurà de respondre una sèrie de preguntes de tipus test i obtindrà una puntuació final segons els encerts.
 
 ---
 
-## 🧩 Objectiu del joc
+##  Objectiu del joc
 
 L’objectiu principal és posar a prova els coneixements de l’usuari mitjançant preguntes amb múltiples opcions de resposta, oferint una experiència senzilla, dinàmica i divertida.
 
 ---
 
-## 🎯 Funcionament
+##  Funcionament
 
 1. L’usuari inicia el quiz
 2. Es mostra una pregunta amb diverses opcions
@@ -23,7 +23,7 @@ L’objectiu principal és posar a prova els coneixements de l’usuari mitjanç
 
 ---
 
-## 🏁 Sistema de puntuació
+##  Sistema de puntuació
 
 - Cada resposta correcta suma punts
 - Les respostes incorrectes no sumen
@@ -34,7 +34,7 @@ L’objectiu principal és posar a prova els coneixements de l’usuari mitjanç
 
 ---
 
-## 🎨 Interfície
+##  Interfície
 
 La pàgina web està dissenyada per ser:
 - Senzilla i intuïtiva
@@ -44,7 +44,7 @@ La pàgina web està dissenyada per ser:
 
 ---
 
-## ⚙️ Funcionalitats
+##  Funcionalitats
 
 - Mostra preguntes dinàmiques
 - Botons de resposta interactius
@@ -54,7 +54,7 @@ La pàgina web està dissenyada per ser:
 
 ---
 
-## 🚀 Objectiu educatiu
+##  Objectiu educatiu
 
 Aquest projecte ens permet:
 - Practicar desenvolupament web
@@ -64,7 +64,7 @@ Aquest projecte ens permet:
 
 ---
 
-## 🛠️ Tecnologies utilitzades
+##  Tecnologies utilitzades
 
 - HTML
 - CSS
@@ -72,6 +72,6 @@ Aquest projecte ens permet:
 
 ---
 
-## 🎉 Conclusió
+##  Conclusió
 
 El projecte consisteix en un quiz interactiu senzill però complet, que permet aplicar coneixements de programació web i crear una experiència d’usuari funcional.
