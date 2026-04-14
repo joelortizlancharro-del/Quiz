@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*let nom;
 const nameInput = document.getElementById("nameInput");
 const confirmBtn = document.getElementById("confirmBtn")
@@ -34,3 +35,6 @@ const iniciarJoc = () => {
 }
 
 iniciarJoc();
+=======
+    
+>>>>>>> feature/interfaz
