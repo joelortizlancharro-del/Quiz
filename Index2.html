@@ -20,8 +20,7 @@
     </nav>
 
     <main class="flex-1 flex flex-col items-center justify-center px-4 py-10">
-        <h3 class="mb-1 text-xl font-semibold text-white">Hola, x!</h3>
-        <p class="mb-8 text-gray-400 text-sm">Quina categoria vols jugar?</p>
+<h3 class="mb-1 text-xl font-semibold text-white">Hola, <span id="nomUsuari">x</span>!</h3><p class="mb-8 text-gray-400 text-sm">Quina categoria vols jugar?</p>
 
         <ul class="grid w-full max-w-3xl gap-4 md:grid-cols-3">
 
@@ -31,7 +30,7 @@
                     <div class="block">
 <img src="media/classics_ic.png" class="mb-2 w-10 h-10" alt="Clàssics" />
 
-                        <div class="w-full font-semibold text-white mb-1">Clàssics</div>
+                        <div class="w-full font-semibold text-white mb-1" id="classics">Clàssics</div>
                         <div class="w-full text-sm text-gray-400">Preguntes sobre jocs clàssics i antics.</div>
                     </div>
                 </label>
@@ -42,7 +41,7 @@
                 <label for="pokemon-option" class="inline-flex items-start w-full p-5 bg-gray-800 border border-gray-700 rounded-xl cursor-pointer hover:bg-gray-700 peer-checked:border-purple-500 peer-checked:bg-gray-700 transition-colors">
                     <div class="block">
                         <img src="media/pokemon_ic.png" class="mb-2 w-10 h-10" alt="Pokémon" />
-                        <div class="w-full font-semibold text-white mb-1">Pokémon</div>
+                        <div class="w-full font-semibold text-white mb-1" id="pokemon">Pokémon</div>
                         <div class="w-full text-sm text-gray-400">Preguntes sobre el univers de Pokémon.</div>
                     </div>
                 </label>
@@ -54,7 +53,7 @@
                     <div class="block">
                        <img src="media/shooter_ic.png" class="mb-2 w-10 h-10" alt="Shooters" />
 
-                        <div class="w-full font-semibold text-white mb-1">Shooters</div>
+                        <div class="w-full font-semibold text-white mb-1" id="shooters">Shooters</div>
                         <div class="w-full text-sm text-gray-400">Preguntes sobre jocs de tir.</div>
                     </div>
                 </label>
@@ -65,7 +64,7 @@
                 <label for="cultura-option" class="inline-flex items-start w-full p-5 bg-gray-800 border border-gray-700 rounded-xl cursor-pointer hover:bg-gray-700 peer-checked:border-purple-500 peer-checked:bg-gray-700 transition-colors">
                     <div class="block">
                         <img src="media/cultura_ic.png" class="mb-2 w-10 h-10" alt="Cultura General" />
-                        <div class="w-full font-semibold text-white mb-1">Cultura General</div>
+                        <div class="w-full font-semibold text-white mb-1" id="cultura">Cultura General</div>
                         <div class="w-full text-sm text-gray-400">Preguntes sobre cultura general de videojocs.</div>
                     </div>
                 </label>
@@ -76,7 +75,7 @@
                 <label for="caos-option" class="inline-flex items-start w-full p-5 bg-gray-800 border border-gray-700 rounded-xl cursor-pointer hover:bg-gray-700 peer-checked:border-purple-500 peer-checked:bg-gray-700 transition-colors">
                     <div class="block">
                         <img src="media/caos_ic.png" class="mb-2 w-10 h-10" alt="CAOS" />
-                        <div class="w-full font-semibold text-white mb-1">CAOS</div>
+                        <div class="w-full font-semibold text-white mb-1" id="caos">CAOS</div>
                         <div class="w-full text-sm text-gray-400">Totes les categories combinades en un sol Quiz.</div>
                     </div>
                 </label>
@@ -84,9 +83,7 @@
 
         </ul>
 
-        <button class="mt-8 px-8 py-3 rounded-lg bg-purple-600 hover:bg-purple-700 text-white font-semibold transition-colors">
-            Jugar →
-        </button>
+       
     </main>
 
     <footer class="bg-gray-800 border-t border-gray-700">
