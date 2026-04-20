@@ -1,5 +1,14 @@
 {
-    "preguntes": [
-        "missatge", "missatge2"
+    "preguntesPokemon":[
+        {
+            "pregunta": "Quin Pokémon és la mascota principal de la franquícia?",
+            "opcions":[
+                "Charmander",
+                "Pikachu ",
+                "Bulbasaur",
+                "Eevee"
+            ],
+            "respostaCorrecta": 2
+        },
     ]
 }
