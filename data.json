@@ -1,0 +1,899 @@
+{
+    "preguntesPokemon":[
+        {
+            "pregunta": "Quin Pokémon és la mascota principal de la franquícia?",
+            "opcions":[
+                "Charmander",
+                "Pikachu ",
+                "Bulbasaur",
+                "Eevee"
+            ],
+            "respostaCorrecta": 1
+        },
+         {
+            "pregunta": "Quin tipus és Pikachu?",
+            "opcions": [
+                "Foc",
+                "Elèctric",
+                "Aigua",
+                "Terra"
+            ],
+            "respostaCorrecta": 1
+        },
+        {
+            "pregunta": "Qui és el professor que dona els primers Pokémon als jocs originals?",
+            "opcions": [
+                "Professor Oak",
+                "Professor Elm",
+                "Professor Birch",
+                "Professor Kukui"
+            ],
+            "respostaCorrecta": 0
+        },
+        {
+            "pregunta": "Quants Pokémon hi havia a la primera generació?",
+            "opcions": [
+                "100",
+                "151",
+                "200",
+                "250"
+            ],
+            "respostaCorrecta": 1
+        },
+        {
+            "pregunta": "Quin Pokémon evoluciona en Charizard?",
+            "opcions": [
+                "Squirtle",
+                "Charmander",
+                "Bulbasaur",
+                "Pikachu"
+            ],
+            "respostaCorrecta": 1
+        },
+        {
+            "pregunta": "Quin objecte s'utilitza per capturar Pokémon?",
+            "opcions": [
+                "Poké Ball",
+                "Potion",
+                "Rare Candy",
+                "Badge"
+            ],
+            "respostaCorrecta": 0
+        },
+        {
+            "pregunta": "Quin és el rival de Ash a la primera temporada de l'anime?",
+            "opcions": [
+                "Gary Oak",
+                "Brock",
+                "Misty",
+                "Jessie"
+            ],
+            "respostaCorrecta": 0
+        },
+        {
+            "pregunta": "Quin tipus és Squirtle?",
+            "opcions": [
+                "Foc",
+                "Aigua",
+                "Planta",
+                "Elèctric"
+            ],
+            "respostaCorrecta": 1
+        },
+        {
+            "pregunta": "Quin Pokémon llegendari és de tipus Elèctric a Kanto?",
+            "opcions": [
+                "Zapdos",
+                "Articuno",
+                "Moltres",
+                "Mew"
+            ],
+            "respostaCorrecta": 0
+        },
+        {
+            "pregunta": "Quin és el nom dels jocs Pokémon originals?",
+            "opcions": [
+                "Pokémon Gold i Silver",
+                "Pokémon Red i Blue",
+                "Pokémon Ruby i Sapphire",
+                "Pokémon Diamond i Pearl"
+            ],
+            "respostaCorrecta": 1
+        },
+        {
+            "pregunta": "Quin Pokémon evoluciona amb una pedra de foc?",
+            "opcions": [
+                "Eevee → Flareon",
+                "Pikachu → Raichu",
+                "Bulbasaur → Ivysaur",
+                "Squirtle → Wartortle"
+            ],
+            "respostaCorrecta": 0
+        },
+        {
+            "pregunta": "Quin és el Pokémon número 1 de la Pokédex?",
+            "opcions": [
+                "Bulbasaur",
+                "Charmander",
+                "Pikachu",
+                "Mew"
+            ],
+            "respostaCorrecta": 0
+        },
+        {
+            "pregunta": "Quin tipus és Bulbasaur?",
+            "opcions": [
+                "Foc",
+                "Planta/Verí",
+                "Aigua",
+                "Elèctric"
+            ],
+            "respostaCorrecta": 1
+        },
+        {
+            "pregunta": "Quin Pokémon és conegut com el Pokémon genètic?",
+            "opcions": [
+                "Mewtwo",
+                "Mew",
+                "Ditto",
+                "Lugia"
+            ],
+            "respostaCorrecta": 0
+        },
+        {
+            "pregunta": "Com es diu la regió dels primers jocs Pokémon?",
+            "opcions": [
+                "Johto",
+                "Kanto",
+                "Hoenn",
+                "Sinnoh"
+            ],
+            "respostaCorrecta": 1
+        },
+        {
+            "pregunta": "Quin Pokémon pot copiar altres Pokémon?",
+            "opcions": [
+                "Ditto",
+                "Eevee",
+                "Snorlax",
+                "Gengar"
+            ],
+            "respostaCorrecta": 0
+        },
+        {
+            "pregunta": "Quin Pokémon és conegut per dormir molt?",
+            "opcions": [
+                "Snorlax",
+                "Psyduck",
+                "Jigglypuff",
+                "Slowpoke"
+            ],
+            "respostaCorrecta": 0
+        },
+        {
+            "pregunta": "Quin tipus és Gengar?",
+            "opcions": [
+                "Fantasma/Verí",
+                "Foc",
+                "Aigua",
+                "Planta"
+            ],
+            "respostaCorrecta": 0
+        },
+        {
+            "pregunta": "Quin Pokémon llegendari és el principal de Pokémon Red/Blue?",
+            "opcions": [
+                "Mewtwo",
+                "Zapdos",
+                "Articuno",
+                "Moltres"
+            ],
+            "respostaCorrecta": 0
+        },
+        {
+            "pregunta": "Quin objecte serveix per curar Pokémon?",
+            "opcions": [
+                "Potion",
+                "Poké Ball",
+                "TM",
+                "Badge"
+            ],
+            "respostaCorrecta": 0
+        },
+        {
+            "pregunta": "Quin Pokémon és conegut com la rata elèctrica?",
+            "opcions": [
+                "Pikachu",
+                "Raichu",
+                "Pichu",
+                "Plusle"
+            ],
+            "respostaCorrecta": 0
+        },
+        {
+            "pregunta": "Quin Pokémon evoluciona de Pikachu?",
+            "opcions": [
+                "Raichu",
+                "Pichu",
+                "Jolteon",
+                "Electabuzz"
+            ],
+            "respostaCorrecta": 0
+        },
+        {
+            "pregunta": "Qui és el rival principal a Pokémon Gold/Silver?",
+            "opcions": [
+                "Silver",
+                "Gary",
+                "Brock",
+                "Lance"
+            ],
+            "respostaCorrecta": 0
+        },
+        {
+            "pregunta": "Quin Pokémon és conegut per cantar i adormir?",
+            "opcions": [
+                "Jigglypuff",
+                "Clefairy",
+                "Togepi",
+                "Chansey"
+            ],
+            "respostaCorrecta": 0
+        },
+        {
+            "pregunta": "Quin tipus és Charizard?",
+            "opcions": [
+                "Foc/Volador",
+                "Foc/Terra",
+                "Foc/Aigua",
+                "Drac"
+            ],
+            "respostaCorrecta": 0
+        },
+        {
+            "pregunta": "Quin Pokémon és conegut per sortir d'un ou?",
+            "opcions": [
+                "Togepi",
+                "Chansey",
+                "Blissey",
+                "Happiny"
+            ],
+            "respostaCorrecta": 0
+        },
+        {
+            "pregunta": "Quin Pokémon és un fantasma morat amb llengua gran?",
+            "opcions": [
+                "Gengar",
+                "Haunter",
+                "Gastly",
+                "Mimikyu"
+            ],
+            "respostaCorrecta": 0
+        },
+        {
+            "pregunta": "Quin Pokémon és conegut per ser molt pesat i de metall?",
+            "opcions": [
+                "Steelix",
+                "Onix",
+                "Magnemite",
+                "Aggron"
+            ],
+            "respostaCorrecta": 0
+        },
+        {
+            "pregunta": "Quin és el Pokémon número 151?",
+            "opcions": [
+                "Mew",
+                "Mewtwo",
+                "Ditto",
+                "Celebi"
+            ],
+            "respostaCorrecta": 0
+        }
+    ],
+   "preguntesClassics": [
+    {
+        "pregunta": "Quin és el protagonista de Super Mario Bros.?",
+        "opcions": [
+            "Luigi",
+            "Mario",
+            "Bowser",
+            "Toad"
+        ],
+        "respostaCorrecta": 1
+    },
+    {
+        "pregunta": "Quin any es va llançar el primer Pac-Man?",
+        "opcions": [
+            "1978",
+            "1980",
+            "1985",
+            "1990"
+        ],
+        "respostaCorrecta": 1
+    },
+    {
+        "pregunta": "En quin joc apareix el personatge Link?",
+        "opcions": [
+            "Final Fantasy",
+            "The Legend of Zelda",
+            "Metroid",
+            "Castlevania"
+        ],
+        "respostaCorrecta": 1
+    },
+    {
+        "pregunta": "Quin era el nom de la consola de 8 bits de Nintendo?",
+        "opcions": [
+            "SNES",
+            "GameCube",
+            "NES",
+            "Wii"
+        ],
+        "respostaCorrecta": 2
+    },
+    {
+        "pregunta": "Quin joc consisteix a apilar peces que cauen?",
+        "opcions": [
+            "Pong",
+            "Tetris",
+            "Arkanoid",
+            "Space Invaders"
+        ],
+        "respostaCorrecta": 1
+    },
+    {
+        "pregunta": "Quin enemic és el principal a Donkey Kong (1981)?",
+        "opcions": [
+            "Bowser",
+            "Donkey Kong",
+            "King K. Rool",
+            "Wario"
+        ],
+        "respostaCorrecta": 1
+    },
+    {
+        "pregunta": "Quin joc és considerat un dels primers shooters espacials?",
+        "opcions": [
+            "Doom",
+            "Space Invaders",
+            "Halo",
+            "Quake"
+        ],
+        "respostaCorrecta": 1
+    },
+    {
+        "pregunta": "Quin personatge menja fantasmes després de menjar una bola gran?",
+        "opcions": [
+            "Mario",
+            "Pac-Man",
+            "Sonic",
+            "Kirby"
+        ],
+        "respostaCorrecta": 1
+    },
+    {
+        "pregunta": "Quin joc introdueix Samus Aran?",
+        "opcions": [
+            "Zelda",
+            "Metroid",
+            "Contra",
+            "Mega Man"
+        ],
+        "respostaCorrecta": 1
+    },
+    {
+        "pregunta": "Quin és el rival de Sonic?",
+        "opcions": [
+            "Tails",
+            "Knuckles",
+            "Dr. Robotnik",
+            "Shadow"
+        ],
+        "respostaCorrecta": 2
+    },
+    {
+        "pregunta": "Quin joc va popularitzar el gènere plataformes als anys 80?",
+        "opcions": [
+            "Mario Bros",
+            "FIFA",
+            "GTA",
+            "Tekken"
+        ],
+        "respostaCorrecta": 0
+    },
+    {
+        "pregunta": "Quin joc és famós per la frase \"Finish Him!\"?",
+        "opcions": [
+            "Street Fighter",
+            "Mortal Kombat",
+            "Tekken",
+            "Killer Instinct"
+        ],
+        "respostaCorrecta": 1
+    },
+    {
+        "pregunta": "Quin era el nom del primer joc de carreres famós de Nintendo?",
+        "opcions": [
+            "Gran Turismo",
+            "Mario Kart",
+            "F-Zero",
+            "Need for Speed"
+        ],
+        "respostaCorrecta": 2
+    },
+    {
+        "pregunta": "Quin joc tracta de destruir blocs amb una pilota?",
+        "opcions": [
+            "Pong",
+            "Arkanoid",
+            "Breakout",
+            "Bubble Bobble"
+        ],
+        "respostaCorrecta": 1
+    },
+    {
+        "pregunta": "Quin joc tenia un personatge blau molt ràpid?",
+        "opcions": [
+            "Mario",
+            "Sonic",
+            "Mega Man",
+            "Kirby"
+        ],
+        "respostaCorrecta": 1
+    },
+    {
+        "pregunta": "Quin és el nom del germà de Mario?",
+        "opcions": [
+            "Wario",
+            "Luigi",
+            "Toad",
+            "Yoshi"
+        ],
+        "respostaCorrecta": 1
+    },
+    {
+        "pregunta": "Quin joc consisteix en lluitar en carrers contra enemics?",
+        "opcions": [
+            "Final Fight",
+            "Zelda",
+            "Pokémon",
+            "Metroid"
+        ],
+        "respostaCorrecta": 0
+    },
+    {
+        "pregunta": "Quin joc utilitza un comandament amb joystick en recreatives?",
+        "opcions": [
+            "Pong",
+            "Street Fighter",
+            "Tetris",
+            "Snake"
+        ],
+        "respostaCorrecta": 1
+    },
+    {
+        "pregunta": "Quin joc és conegut per les seves masmorres i trencaclosques?",
+        "opcions": [
+            "Zelda",
+            "FIFA",
+            "Call of Duty",
+            "Minecraft"
+        ],
+        "respostaCorrecta": 0
+    },
+    {
+        "pregunta": "Quin joc tenia el personatge Mega Man?",
+        "opcions": [
+            "Mega Man",
+            "Metroid",
+            "Contra",
+            "Castlevania"
+        ],
+        "respostaCorrecta": 0
+    },
+    {
+        "pregunta": "Quin joc consisteix en lluitar contra vampirs?",
+        "opcions": [
+            "Castlevania",
+            "Doom",
+            "Halo",
+            "Fortnite"
+        ],
+        "respostaCorrecta": 0
+    },
+    {
+        "pregunta": "Quin joc és un clàssic de lluita 1 contra 1?",
+        "opcions": [
+            "Street Fighter",
+            "Mario Kart",
+            "Tetris",
+            "Pac-Man"
+        ],
+        "respostaCorrecta": 0
+    },
+    {
+        "pregunta": "Quin joc és conegut per les seves fases difícils i acció?",
+        "opcions": [
+            "Contra",
+            "Pokémon",
+            "Animal Crossing",
+            "Sims"
+        ],
+        "respostaCorrecta": 0
+    },
+    {
+        "pregunta": "Quin joc tenia una serp que creixia menjant?",
+        "opcions": [
+            "Snake",
+            "Tetris",
+            "Pong",
+            "Arkanoid"
+        ],
+        "respostaCorrecta": 0
+    },
+    {
+        "pregunta": "Quin joc era de futbol en 8 bits?",
+        "opcions": [
+            "FIFA",
+            "Sensible Soccer",
+            "PES",
+            "Rocket League"
+        ],
+        "respostaCorrecta": 1
+    },
+    {
+        "pregunta": "Quin joc tenia el personatge Kirby?",
+        "opcions": [
+            "Kirby's Dream Land",
+            "Mario Bros",
+            "Sonic",
+            "Zelda"
+        ],
+        "respostaCorrecta": 0
+    },
+    {
+        "pregunta": "Quin joc és conegut per la seva música i velocitat?",
+        "opcions": [
+            "Sonic",
+            "Tetris",
+            "Pong",
+            "Doom"
+        ],
+        "respostaCorrecta": 0
+    },
+    {
+        "pregunta": "Quin joc consisteix a disparar aliens en una pantalla fixa?",
+        "opcions": [
+            "Space Invaders",
+            "GTA",
+            "FIFA",
+            "Minecraft"
+        ],
+        "respostaCorrecta": 0
+    },
+    {
+        "pregunta": "Quin joc és un clàssic de trencaclosques amb blocs?",
+        "opcions": [
+            "Tetris",
+            "Doom",
+            "Halo",
+            "Skyrim"
+        ],
+        "respostaCorrecta": 0
+    },
+    {
+        "pregunta": "Quin joc és considerat un dels primers videojocs de la història?",
+        "opcions": [
+            "Pong",
+            "Mario",
+            "Zelda",
+            "Sonic"
+        ],
+        "respostaCorrecta": 0
+    }
+           
+    ],
+    "preguntesShooters": [
+    {
+        "pregunta": "Quin joc és considerat un dels primers FPS moderns?",
+        "opcions": [
+            "Doom",
+            "Fortnite",
+            "GTA V",
+            "Minecraft"
+        ],
+        "respostaCorrecta": 0
+    },
+    {
+        "pregunta": "Quin joc va popularitzar el multijugador en línia a consoles?",
+        "opcions": [
+            "Halo 2",
+            "Doom",
+            "Quake",
+            "Counter-Strike"
+        ],
+        "respostaCorrecta": 0
+    },
+    {
+        "pregunta": "Quin és el protagonista principal de la saga Halo?",
+        "opcions": [
+            "Master Chief",
+            "Doom Slayer",
+            "Gordon Freeman",
+            "Soap MacTavish"
+        ],
+        "respostaCorrecta": 0
+    },
+    {
+        "pregunta": "Quin joc és conegut per \"Battle Royale\" amb construcció?",
+        "opcions": [
+            "Call of Duty",
+            "Fortnite",
+            "Apex Legends",
+            "Valorant"
+        ],
+        "respostaCorrecta": 1
+    },
+    {
+        "pregunta": "Quin joc és un FPS tàctic amb agents i habilitats?",
+        "opcions": [
+            "Valorant",
+            "Doom",
+            "Battlefield",
+            "Half-Life"
+        ],
+        "respostaCorrecta": 0
+    },
+    {
+        "pregunta": "Quin és el protagonista de Half-Life?",
+        "opcions": [
+            "Gordon Freeman",
+            "Master Chief",
+            "Marcus Fenix",
+            "Doom Slayer"
+        ],
+        "respostaCorrecta": 0
+    },
+    {
+        "pregunta": "Quin joc és famós per la guerra moderna realista?",
+        "opcions": [
+            "Call of Duty: Modern Warfare",
+            "Fortnite",
+            "Minecraft",
+            "Overwatch"
+        ],
+        "respostaCorrecta": 0
+    },
+    {
+        "pregunta": "Quin joc és un shooter amb herois i habilitats?",
+        "opcions": [
+            "Overwatch",
+            "CS:GO",
+            "Doom",
+            "Battlefield"
+        ],
+        "respostaCorrecta": 0
+    },
+    {
+        "pregunta": "Quin joc és conegut per la saga \"Counter-Strike\"?",
+        "opcions": [
+            "CS:GO",
+            "Valorant",
+            "Halo",
+            "Quake"
+        ],
+        "respostaCorrecta": 0
+    },
+    {
+        "pregunta": "Quin joc té el mode \"Zombies\" molt popular?",
+        "opcions": [
+            "Call of Duty",
+            "Apex Legends",
+            "Valorant",
+            "Doom"
+        ],
+        "respostaCorrecta": 0
+    },
+    {
+        "pregunta": "Quin joc és un shooter de ciència-ficció amb portàtil de portal?",
+        "opcions": [
+            "Portal",
+            "Half-Life",
+            "Doom",
+            "Quake"
+        ],
+        "respostaCorrecta": 0
+    },
+    {
+        "pregunta": "Quin és el principal enemic a Doom?",
+        "opcions": [
+            "Demonis de l'infern",
+            "Aliens",
+            "Robots",
+            "Zombies humans"
+        ],
+        "respostaCorrecta": 0
+    },
+    {
+        "pregunta": "Quin joc és un battle royale amb llegendes?",
+        "opcions": [
+            "Apex Legends",
+            "Fortnite",
+            "PUBG",
+            "Valorant"
+        ],
+        "respostaCorrecta": 0
+    },
+    {
+        "pregunta": "Quin joc és conegut per destrucció d'escenaris realista?",
+        "opcions": [
+            "Battlefield",
+            "Call of Duty",
+            "CS:GO",
+            "Overwatch"
+        ],
+        "respostaCorrecta": 0
+    },
+    {
+        "pregunta": "Quin joc utilitza \"operators\" i estratègia defensiva?",
+        "opcions": [
+            "Rainbow Six Siege",
+            "Valorant",
+            "Fortnite",
+            "Doom"
+        ],
+        "respostaCorrecta": 0
+    },
+    {
+        "pregunta": "Quin joc té el personatge \"Reaper\"?",
+        "opcions": [
+            "Overwatch",
+            "Valorant",
+            "CS:GO",
+            "Apex Legends"
+        ],
+        "respostaCorrecta": 0
+    },
+    {
+        "pregunta": "Quin joc és un dels primers FPS competitius online?",
+        "opcions": [
+            "Quake III Arena",
+            "Doom Eternal",
+            "Halo Infinite",
+            "Fortnite"
+        ],
+        "respostaCorrecta": 0
+    },
+    {
+        "pregunta": "Quin joc és famós per \"rush B\"?",
+        "opcions": [
+            "CS:GO",
+            "Valorant",
+            "Battlefield",
+            "Overwatch"
+        ],
+        "respostaCorrecta": 0
+    },
+    {
+        "pregunta": "Quin joc té el protagonista Marcus Fenix?",
+        "opcions": [
+            "Gears of War",
+            "Halo",
+            "Doom",
+            "Call of Duty"
+        ],
+        "respostaCorrecta": 0
+    },
+    {
+        "pregunta": "Quin joc és un FPS amb criatures alienígenes i experiment científic?",
+        "opcions": [
+            "Half-Life",
+            "Doom",
+            "Halo",
+            "Valorant"
+        ],
+        "respostaCorrecta": 0
+    },
+    {
+        "pregunta": "Quin joc permet construir mentre lluites?",
+        "opcions": [
+            "Fortnite",
+            "CS:GO",
+            "Doom",
+            "Overwatch"
+        ],
+        "respostaCorrecta": 0
+    },
+    {
+        "pregunta": "Quin joc té el mode \"Warzone\"?",
+        "opcions": [
+            "Call of Duty",
+            "Battlefield",
+            "Apex Legends",
+            "Valorant"
+        ],
+        "respostaCorrecta": 0
+    },
+    {
+        "pregunta": "Quin joc és conegut per la seva física avançada i puzzles?",
+        "opcions": [
+            "Portal 2",
+            "Doom",
+            "CS:GO",
+            "Fortnite"
+        ],
+        "respostaCorrecta": 0
+    },
+    {
+        "pregunta": "Quin joc és un shooter militar tàctic modern?",
+        "opcions": [
+            "Battlefield 2042",
+            "Call of Duty Modern Warfare",
+            "Apex Legends",
+            "Overwatch"
+        ],
+        "respostaCorrecta": 1
+    },
+    {
+        "pregunta": "Quin joc té agents com Jett i Phoenix?",
+        "opcions": [
+            "Valorant",
+            "CS:GO",
+            "Fortnite",
+            "Halo"
+        ],
+        "respostaCorrecta": 0
+    },
+    {
+        "pregunta": "Quin joc és un FPS clàssic de Valve?",
+        "opcions": [
+            "Half-Life 2",
+            "Doom",
+            "Overwatch",
+            "PUBG"
+        ],
+        "respostaCorrecta": 0
+    },
+    {
+        "pregunta": "Quin joc és un battle royale amb armes realistes?",
+        "opcions": [
+            "PUBG",
+            "Fortnite",
+            "Apex Legends",
+            "Valorant"
+        ],
+        "respostaCorrecta": 0
+    },
+    {
+        "pregunta": "Quin joc és conegut per l'escenari \"Dust II\"?",
+        "opcions": [
+            "CS:GO",
+            "Valorant",
+            "Fortnite",
+            "Overwatch"
+        ],
+        "respostaCorrecta": 0
+    },
+    {
+        "pregunta": "Quin joc té un personatge anomenat \"Tracer\"?",
+        "opcions": [
+            "Overwatch",
+            "Apex Legends",
+            "CS:GO",
+            "Doom"
+        ],
+        "respostaCorrecta": 0
+    },
+    {
+        "pregunta": "Quin joc és un FPS amb ambient postapocalíptic i mutants?",
+        "opcions": [
+            "Metro Exodus",
+            "Fortnite",
+            "Valorant",
+            "CS:GO"
+        ],
+        "respostaCorrecta": 0
+    }
+],
+   
