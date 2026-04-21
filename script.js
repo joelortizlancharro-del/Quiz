@@ -14,6 +14,7 @@ confirmBtn.addEventListener('click', () => {
 let preguntes;
 let indice = 0;
 let puntuacion = 0;
+let temporizador;
 const mode = {
     pokemon: "preguntesPokemon",
     classics: "preguntesClassics",
@@ -24,7 +25,8 @@ const mode = {
 const cargarPreguntes = async () => {
     try {
         const res = await fetch("data.json");
-        preguntes = await res.json();
+        const data = await res.json();
+        preguntes = data[mode.pokemon];
         console.log(preguntes);
     } catch (error) {
         console.error("Error cargando JSON:", error);
@@ -34,40 +36,43 @@ const cargarPreguntes = async () => {
 
 const mostrarPregunta = (question) => {
     const questionCard = document.getElementById("tarjeta");
+    questionCard.innerHTML = "";
 
-        // limpiar contingut anterior
-        questionCard.innerHTML = "";
+    const h3 = document.createElement("h3");
+    h3.textContent = question.pregunta;
+    questionCard.appendChild(h3);
 
-        // crear h3 amb la pregunta
-        const h3 = document.createElement("h3");
-        h3.textContent = question.pregunta;
+    question.opcions.forEach((opcio, index) => {
+        const btn = document.createElement("button");
+        btn.textContent = opcio;
 
-        questionCard.appendChild(h3);
+        btn.onclick = () => {
+            clearTimeout(temporizador);
+            comprobarRespuesta(index, question.respostaCorrecta);
+        };
 
-        // crear opcions
-        question.opcions.forEach(opcion => {
-            const p = document.createElement("p");
-            p.textContent = opcion;
-
-            questionCard.appendChild(p);
-        });
-
+        questionCard.appendChild(btn);
+        temporizador = setTimeout(() => {
+            indice++;
+            seguentPregunta();
+        }, 15000);
+    });
 }
 
 const comprobarRespuesta = (respuestaUsuario, respuestaCorrecta) => {
     if (respuestaUsuario === respuestaCorrecta) {
-        puntuacion += 100;
-    }else {
-        puntuacion -= 30;
+        puntuacion += 10;
+    } else {
+        puntuacion -= 3;
     }
 
-    indice++; // 🔥 avanzar a la siguiente
-    siguientePregunta();
+    indice++;
+    seguentPregunta();
 };
 
-const siguientePregunta = () => {
-    if (indice < preguntas.length) {
-        mostrarPregunta(preguntas[indice]);
+const seguentPregunta = () => {
+    if (indice < preguntes.length) {
+        mostrarPregunta(preguntes[indice]);
     } else {
         terminarJuego();
     }
@@ -86,7 +91,6 @@ const iniciarJoc = () => {
 }
 
 
-iniciarJoc();
 
 cargarPreguntes();
 
