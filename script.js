@@ -56,12 +56,12 @@ const mostrarPregunta = (question) => {
 
 const comprobarRespuesta = (respuestaUsuario, respuestaCorrecta) => {
     if (respuestaUsuario === respuestaCorrecta) {
-        puntuacion += 100;
+        puntuacion += 10;
     }else {
-        puntuacion -= 30;
+        puntuacion -= 3;
     }
 
-    indice++; // 🔥 avanzar a la siguiente
+    indice++; 
     siguientePregunta();
 };
 
