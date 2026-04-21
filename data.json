@@ -592,7 +592,7 @@
         ],
         "respostaCorrecta": 0
     }
-
+           
     ],
     "preguntesShooters": [
     {
@@ -892,6 +892,297 @@
             "Fortnite",
             "Valorant",
             "CS:GO"
+        ],
+        "respostaCorrecta": 0
+    }
+], "preguntesCulturaGeneral": [
+    {
+        "pregunta": "Quin és l'empresa creadora de Mario i Zelda?",
+        "opcions": [
+            "Sony",
+            "Nintendo",
+            "Microsoft",
+            "Sega"
+        ],
+        "respostaCorrecta": 1
+    },
+    {
+        "pregunta": "Quin és el rival principal de PlayStation?",
+        "opcions": [
+            "Nintendo Switch",
+            "Xbox",
+            "Steam Deck",
+            "Atari"
+        ],
+        "respostaCorrecta": 1
+    },
+    {
+        "pregunta": "Quin any es va llançar la primera PlayStation?",
+        "opcions": [
+            "1990",
+            "1994",
+            "1998",
+            "2001"
+        ],
+        "respostaCorrecta": 1
+    },
+    {
+        "pregunta": "Quin és el joc més venut de la història?",
+        "opcions": [
+            "Minecraft",
+            "GTA V",
+            "Tetris",
+            "Wii Sports"
+        ],
+        "respostaCorrecta": 0
+    },
+    {
+        "pregunta": "Quin és el creador de Minecraft?",
+        "opcions": [
+            "Shigeru Miyamoto",
+            "Markus Persson (Notch)",
+            "Gabe Newell",
+            "Hideo Kojima"
+        ],
+        "respostaCorrecta": 1
+    },
+    {
+        "pregunta": "Quin estudi va crear Grand Theft Auto?",
+        "opcions": [
+            "Ubisoft",
+            "Rockstar Games",
+            "EA",
+            "Valve"
+        ],
+        "respostaCorrecta": 1
+    },
+    {
+        "pregunta": "Quin és el motor gràfic de molts jocs de Valve?",
+        "opcions": [
+            "Unreal Engine",
+            "Source Engine",
+            "Frostbite",
+            "Unity"
+        ],
+        "respostaCorrecta": 1
+    },
+    {
+        "pregunta": "Quin joc és conegut per la seva \"llibertat total\" en un món obert?",
+        "opcions": [
+            "GTA V",
+            "Tetris",
+            "Pac-Man",
+            "Street Fighter"
+        ],
+        "respostaCorrecta": 0
+    },
+    {
+        "pregunta": "Quin és el servei digital de jocs de PC més popular?",
+        "opcions": [
+            "Epic Games Store",
+            "Steam",
+            "Origin",
+            "Uplay"
+        ],
+        "respostaCorrecta": 1
+    },
+    {
+        "pregunta": "Quin joc és famós per \"blocky graphics\" i construcció?",
+        "opcions": [
+            "Minecraft",
+            "Fortnite",
+            "Roblox",
+            "Terraria"
+        ],
+        "respostaCorrecta": 0
+    },
+    {
+        "pregunta": "Quin és el premi més important dels videojocs?",
+        "opcions": [
+            "Oscars",
+            "The Game Awards",
+            "Emmy",
+            "Grammy"
+        ],
+        "respostaCorrecta": 1
+    },
+    {
+        "pregunta": "Quin creador és conegut per Metal Gear Solid?",
+        "opcions": [
+            "Hideo Kojima",
+            "Miyamoto",
+            "Todd Howard",
+            "Sid Meier"
+        ],
+        "respostaCorrecta": 0
+    },
+    {
+        "pregunta": "Quin joc és un simulador de vida?",
+        "opcions": [
+            "The Sims",
+            "GTA",
+            "Fortnite",
+            "Doom"
+        ],
+        "respostaCorrecta": 0
+    },
+    {
+        "pregunta": "Quin és el motor gràfic de Fortnite?",
+        "opcions": [
+            "Unity",
+            "Unreal Engine",
+            "Source",
+            "CryEngine"
+        ],
+        "respostaCorrecta": 1
+    },
+    {
+        "pregunta": "Quin joc és conegut per ser un \"sandbox creatiu\"?",
+        "opcions": [
+            "Minecraft",
+            "FIFA",
+            "Call of Duty",
+            "Halo"
+        ],
+        "respostaCorrecta": 0
+    },
+    {
+        "pregunta": "Quin és el creador de Zelda?",
+        "opcions": [
+            "Shigeru Miyamoto",
+            "Hideo Kojima",
+            "Gabe Newell",
+            "Notch"
+        ],
+        "respostaCorrecta": 0
+    },
+    {
+        "pregunta": "Quin joc va popularitzar els esports electrònics (eSports)?",
+        "opcions": [
+            "League of Legends",
+            "CS 1.6",
+            "Fortnite",
+            "Minecraft"
+        ],
+        "respostaCorrecta": 1
+    },
+    {
+        "pregunta": "Quin és el joc més jugat en competicions MOBA?",
+        "opcions": [
+            "Dota 2",
+            "League of Legends",
+            "Heroes of the Storm",
+            "Smite"
+        ],
+        "respostaCorrecta": 1
+    },
+    {
+        "pregunta": "Quin estudi va crear The Witcher 3?",
+        "opcions": [
+            "Ubisoft",
+            "CD Projekt Red",
+            "EA",
+            "Bethesda"
+        ],
+        "respostaCorrecta": 1
+    },
+    {
+        "pregunta": "Quin joc és conegut per les seves decisions morals?",
+        "opcions": [
+            "The Witcher 3",
+            "FIFA",
+            "Fortnite",
+            "Tetris"
+        ],
+        "respostaCorrecta": 0
+    },
+    {
+        "pregunta": "Quin joc va introduir el battle royale modern?",
+        "opcions": [
+            "PUBG",
+            "Minecraft",
+            "GTA",
+            "Halo"
+        ],
+        "respostaCorrecta": 0
+    },
+    {
+        "pregunta": "Quin és el motor gràfic de molts jocs d'EA?",
+        "opcions": [
+            "Frostbite",
+            "Unity",
+            "Source",
+            "Unreal"
+        ],
+        "respostaCorrecta": 0
+    },
+    {
+        "pregunta": "Quin joc és conegut per \"The Elder Scrolls\"?",
+        "opcions": [
+            "Skyrim",
+            "GTA",
+            "Fortnite",
+            "Minecraft"
+        ],
+        "respostaCorrecta": 0
+    },
+    {
+        "pregunta": "Quin és el creador de Half-Life?",
+        "opcions": [
+            "Valve",
+            "Ubisoft",
+            "EA",
+            "Rockstar"
+        ],
+        "respostaCorrecta": 0
+    },
+    {
+        "pregunta": "Quin joc és famós per \"building survival\"?",
+        "opcions": [
+            "Rust",
+            "Minecraft",
+            "ARK",
+            "DayZ"
+        ],
+        "respostaCorrecta": 1
+    },
+    {
+        "pregunta": "Quin joc és un MOBA 5v5 molt popular?",
+        "opcions": [
+            "League of Legends",
+            "CS:GO",
+            "Valorant",
+            "Fortnite"
+        ],
+        "respostaCorrecta": 0
+    },
+    {
+        "pregunta": "Quin joc va revolucionar els jocs musicals?",
+        "opcions": [
+            "Guitar Hero",
+            "FIFA",
+            "GTA",
+            "Halo"
+        ],
+        "respostaCorrecta": 0
+    },
+    {
+        "pregunta": "Quin és el nom de la consola híbrida de Nintendo?",
+        "opcions": [
+            "Wii U",
+            "Nintendo Switch",
+            "GameCube",
+            "DS"
+        ],
+        "respostaCorrecta": 1
+    },
+    {
+        "pregunta": "Quin joc és conegut per \"Skibidi toilets\" i memes virals?",
+        "opcions": [
+            "Roblox",
+            "Minecraft",
+            "Fortnite",
+            "GTA V"
         ],
         "respostaCorrecta": 0
     }
