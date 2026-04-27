@@ -4,6 +4,8 @@ let index = 0;
 let puntuacio = 0;
 let temporizador;
 let modeEscollit;
+
+const display = document.getElementById("temporitzador");
 const mode = {
     pokemon: "preguntesPokemon",
     classics: "preguntesClassics",
@@ -50,15 +52,28 @@ const mostrarPregunta = (question) => {
     document.getElementById("numPregunta").textContent = `Pregunta ${index + 1}`;
     document.getElementById("comptador").textContent = `Pregunta ${index + 1} / ${preguntes.length}`;
 
-    // ⏱️ temporizador
-    temporizador = setTimeout(() => {
+// ⏱️ temporizador
+let tiempo = 15;
+display.textContent = tiempo;
+
+// limpiamos cualquier temporizador previo
+clearInterval(temporitzador);
+
+temporitzador = setInterval(() => {
+    tiempo--;
+    console.log(tiempo);
+    display.textContent = tiempo;
+
+    if (tiempo <= 0) {
+        clearInterval(temporitzador);
         index++;
         seguentPregunta();
-    }, 15000);
+    }
+}, 1000);
 };
 
 const comprobarRespuesta = (respuestaUsuario, respuestaCorrecta) => {
-    clearTimeout(temporizador);
+    clearInterval(temporizador);
 
     if (respuestaUsuario === respuestaCorrecta) {
         puntuacio += 10;
@@ -131,7 +146,7 @@ if (pagina === "pagina1") {
         window.location.href = "index3.html";
     });
 
-    
+
 } else if (pagina === "pagina3") {
 
 
