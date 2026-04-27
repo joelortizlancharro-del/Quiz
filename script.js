@@ -1,5 +1,5 @@
 
-/*let nom;
+let nom;
 const nameInput = document.getElementById("nameInput");
 const confirmBtn = document.getElementById("confirmBtn")
 
@@ -10,11 +10,14 @@ confirmBtn.addEventListener('click', () => {
     }
     nom = nameInput.value
 })
-*/
+
+const nomSpan = document.getElementById("nomUsuari");
+nomSpan.innerHTML= nom;
 let preguntes;
-let indice = 0;
-let puntuacion = 0;
+let index = 0;
+let puntuacio = 0;
 let temporizador;
+let modeEscollit;
 const mode = {
     pokemon: "preguntesPokemon",
     classics: "preguntesClassics",
@@ -53,25 +56,27 @@ const mostrarPregunta = (question) => {
 
         questionCard.appendChild(btn);
         temporizador = setTimeout(() => {
-            indice++;
+            index++;
             seguentPregunta();
         }, 15000);
     });
 }
 
 const comprobarRespuesta = (respuestaUsuario, respuestaCorrecta) => {
+    clearTimeout(temporizador);
+
     if (respuestaUsuario === respuestaCorrecta) {
-        puntuacion += 10;
+        puntuacio += 10;
     } else {
-        puntuacion -= 3;
+        puntuacio -= 3;
     }
 
-    indice++;
+    index++;
     seguentPregunta();
 };
 
 const seguentPregunta = () => {
-    if (indice < preguntes.length) {
+    if (index < preguntes.length) {
         mostrarPregunta(preguntes[indice]);
     } else {
         terminarJuego();
@@ -80,13 +85,14 @@ const seguentPregunta = () => {
 
 const terminarJuego = () => {
     const contenedor = document.getElementById("tarjeta");
-    contenedor.innerHTML = `<h2>Juego terminado</h2>
-                            <p>Puntuación: ${puntuacion}</p>`;
+    contenedor.innerHTML = `
+        <h2>Juego terminado</h2>
+        <p>Puntuación: ${puntuacio}</p>
+    `;
 };
-
 const iniciarJoc = () => {
-    indice = 0;
-    puntuacion = 0;
+    index = 0;
+    puntuacio = 0;
     seguentPregunta();
 }
 
