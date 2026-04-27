@@ -17,16 +17,16 @@
         </div>
     </nav>
 
-    <main class="flex-1 flex items-center justify-center px-4 py-10">
-        <div class="w-full max-w-sm bg-gray-800 rounded-2xl border border-gray-700 p-8">
+    <main class="flex-1 flex items-center justify-center px-4 py-8">
+        <div class="w-full max-w-sm bg-gray-800 rounded-2xl border border-gray-700 p-6 sm:p-8">
 
             <div class="flex flex-col items-center mb-6">
-                <div class="w-24 h-24 rounded-full border-4 border-purple-500 flex flex-col items-center justify-center mb-4">
-                    <span class="text-purple-400 text-4xl font-bold" id="puntuacio">x</span>
-                    <span class="text-gray-400 text-sm" id="total">de 30</span>
+                <div class="w-20 h-20 sm:w-24 sm:h-24 rounded-full border-4 border-purple-500 flex flex-col items-center justify-center mb-4">
+                    <span class="text-purple-400 text-3xl sm:text-4xl font-bold" id="puntuacio">x</span>
+                    <span class="text-gray-400 text-xs sm:text-sm" id="total">pts. de x</span>
                 </div>
-                <h2 class="text-white font-bold text-lg" id="missatge">Molt bé, x!</h2>
-                <p class="text-gray-400 text-sm" id="submissatge">Has encertat x de 30 preguntes</p>
+                <h2 class="text-white font-bold text-base sm:text-lg" id="missatge">Molt bé, x!</h2>
+                <p class="text-gray-400 text-xs sm:text-sm text-center" id="submissatge">Has encertat x de x preguntes</p>
             </div>
 
             <div class="space-y-2 mb-6">
@@ -38,13 +38,17 @@
                     <span class="text-gray-300 text-sm">Incorrectes</span>
                     <span class="text-purple-400 font-semibold" id="incorrectes">0</span>
                 </div>
+                <div class="flex justify-between items-center bg-gray-700 rounded-lg px-4 py-3">
+                    <span class="text-gray-300 text-sm">Millor puntuació</span>
+                    <span class="text-purple-400 font-semibold" id="millorPuntuacio">0</span>
+                </div>
             </div>
 
-            <div class="grid grid-cols-2 gap-3">
-                <button class="py-3 rounded-lg bg-purple-600 hover:bg-purple-700 text-white font-semibold transition-colors" id="btnTornar">
+            <div class="flex flex-col sm:grid sm:grid-cols-2 gap-3">
+                <button class="py-3 rounded-lg bg-purple-600 hover:bg-purple-700 text-white font-semibold transition-colors text-sm" id="btnTornar">
                     Tornar a jugar
                 </button>
-                <button class="py-3 rounded-lg border border-purple-500 text-purple-400 hover:bg-gray-700 font-semibold transition-colors" id="btnCategoria">
+                <button class="py-3 rounded-lg border border-purple-500 text-purple-400 hover:bg-gray-700 font-semibold transition-colors text-sm" id="btnCategoria">
                     Canviar categoria
                 </button>
             </div>
@@ -55,7 +59,7 @@
     <footer class="bg-gray-800 border-t border-gray-700">
         <div class="w-full max-w-screen-xl mx-auto p-4">
             <hr class="my-4 border-gray-700 sm:mx-auto" />
-            <span class="block text-sm text-gray-400 sm:text-center">Joel Ortiz, Albert Castellon, Eric Fradera, Pol Hernaez</span>
+            <span class="block text-sm text-gray-400 text-center">Joel Ortiz, Albert Castellon, Eric Fradera, Pol Hernaez</span>
         </div>
     </footer>
 
