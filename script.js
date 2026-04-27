@@ -1,19 +1,4 @@
-<<<<<<< HEAD
-
 let nom;
-const nameInput = document.getElementById("nameInput");
-const confirmBtn = document.getElementById("confirmBtn")
-
-confirmBtn.addEventListener('click', () => {
-    if (nom === "") {
-        alert("Introdueix un nom");
-        return;
-    }
-    nom = nameInput.value
-})
-
-const nomSpan = document.getElementById("nomUsuari");
-nomSpan.innerHTML= nom;
 let preguntes;
 let index = 0;
 let puntuacio = 0;
@@ -30,7 +15,8 @@ const cargarPreguntes = async () => {
     try {
         const res = await fetch("data.json");
         const data = await res.json();
-        preguntes = data[mode.pokemon];
+        const tematica = localStorage.getItem("modeJoc");
+        preguntes = data[mode[tematica]];
         console.log(preguntes);
     } catch (error) {
         console.error("Error cargando JSON:", error);
@@ -39,29 +25,37 @@ const cargarPreguntes = async () => {
 }
 
 const mostrarPregunta = (question) => {
-    const questionCard = document.getElementById("tarjeta");
-    questionCard.innerHTML = "";
 
-    const h3 = document.createElement("h3");
-    h3.textContent = question.pregunta;
-    questionCard.appendChild(h3);
+    // pregunta
+    document.getElementById("textPregunta").textContent = question.pregunta;
 
-    question.opcions.forEach((opcio, index) => {
-        const btn = document.createElement("button");
-        btn.textContent = opcio;
+    // opciones
+    const botones = [
+        document.getElementById("opcioA"),
+        document.getElementById("opcioB"),
+        document.getElementById("opcioC"),
+        document.getElementById("opcioD")
+    ];
+
+    botones.forEach((btn, i) => {
+        btn.textContent = question.opcions[i];
 
         btn.onclick = () => {
             clearTimeout(temporizador);
-            comprobarRespuesta(index, question.respostaCorrecta);
+            comprobarRespuesta(i, question.respostaCorrecta);
         };
-
-        questionCard.appendChild(btn);
-        temporizador = setTimeout(() => {
-            index++;
-            seguentPregunta();
-        }, 15000);
     });
-}
+
+    // contador pregunta
+    document.getElementById("numPregunta").textContent = `Pregunta ${index + 1}`;
+    document.getElementById("comptador").textContent = `Pregunta ${index + 1} / ${preguntes.length}`;
+
+    // ⏱️ temporizador
+    temporizador = setTimeout(() => {
+        index++;
+        seguentPregunta();
+    }, 15000);
+};
 
 const comprobarRespuesta = (respuestaUsuario, respuestaCorrecta) => {
     clearTimeout(temporizador);
@@ -78,7 +72,7 @@ const comprobarRespuesta = (respuestaUsuario, respuestaCorrecta) => {
 
 const seguentPregunta = () => {
     if (index < preguntes.length) {
-        mostrarPregunta(preguntes[indice]);
+        mostrarPregunta(preguntes[index]);
     } else {
         terminarJuego();
     }
@@ -98,100 +92,54 @@ const iniciarJoc = () => {
 }
 
 
+const pagina = document.body.id;
 
-cargarPreguntes();
+if (pagina === "pagina1") {
+    const nameInput = document.getElementById("nameInput");
+    const confirmBtn = document.getElementById("confirmBtn");
 
-=======
+    confirmBtn.addEventListener('click', () => {
+        const nombre = nameInput.value.trim();
 
-/*let nom;
-const nameInput = document.getElementById("nameInput");
-const confirmBtn = document.getElementById("confirmBtn")
+        if (nombre === "") {
+            alert("Introdueix un nom");
+            return;
+        }
+        console.log(nombre)
+        localStorage.setItem("nomJugador", nombre);
 
-confirmBtn.addEventListener('click', () => {
-    if (nom === "") {
-        alert("Introdueix un nom");
-        return;
-    }
-    nom = nameInput.value
-})
-*/
-let preguntes;
-let indice = 0;
-let puntuacion = 0;
-const mode = {
-    pokemon: "preguntesPokemon",
-    classics: "preguntesClassics",
-    shooters: "preguntesShooters",
-    cultura: "preguntesCulturaGeneral",
-    caos: "caos"
+        window.location.href = "index2.html";
+    });
+} else if (pagina === "pagina2") {
+    const nomSpan = document.getElementById("nomUsuari");
+    const nom = localStorage.getItem("nomJugador");
+    const modeBtn = document.getElementById("modeBtn");
+
+    nomSpan.textContent = nom;
+
+    modeBtn.addEventListener('click', () => {
+        const seleccionada = document.querySelector('input[name="categories"]:checked');
+
+        if (!seleccionada) {
+            alert("Selecciona un mode de joc");
+            return;
+        }
+
+        const modeEscollit = seleccionada.value;
+
+        localStorage.setItem("modeJoc", modeEscollit);
+        window.location.href = "index3.html";
+    });
+
+    
+} else if (pagina === "pagina3") {
+
+
+    cargarPreguntes();
+} else if (pagina === "pagina4") {
+    const nombre = localStorage.getItem("nomJugador");
+    const puntuacionFinal = localStorage.getItem("puntuacionFinal");
+
+    document.getElementById("nomUsuari").textContent = nombre;
+    document.getElementById("puntuacion").textContent = puntuacionFinal;
 }
-const cargarPreguntes = async () => {
-    try {
-        const res = await fetch("data.json");
-        preguntes = await res.json();
-        console.log(preguntes);
-    } catch (error) {
-        console.error("Error cargando JSON:", error);
-    }
-    iniciarJoc();
-}
-
-const mostrarPregunta = (question) => {
-    const questionCard = document.getElementById("tarjeta");
-
-        // limpiar contingut anterior
-        questionCard.innerHTML = "";
-
-        // crear h3 amb la pregunta
-        const h3 = document.createElement("h3");
-        h3.textContent = question.pregunta;
-
-        questionCard.appendChild(h3);
-
-        // crear opcions
-        question.opcions.forEach(opcion => {
-            const p = document.createElement("p");
-            p.textContent = opcion;
-
-            questionCard.appendChild(p);
-        });
-
-}
-
-const comprobarRespuesta = (respuestaUsuario, respuestaCorrecta) => {
-    if (respuestaUsuario === respuestaCorrecta) {
-        puntuacion += 10;
-    }else {
-        puntuacion -= 3;
-    }
-
-    indice++; 
-    siguientePregunta();
-};
-
-const siguientePregunta = () => {
-    if (indice < preguntas.length) {
-        mostrarPregunta(preguntas[indice]);
-    } else {
-        terminarJuego();
-    }
-};
-
-const terminarJuego = () => {
-    const contenedor = document.getElementById("tarjeta");
-    contenedor.innerHTML = `<h2>Juego terminado</h2>
-                            <p>Puntuación: ${puntuacion}</p>`;
-};
-
-const iniciarJoc = () => {
-    indice = 0;
-    puntuacion = 0;
-    seguentPregunta();
-}
-
-
-iniciarJoc();
-
-cargarPreguntes();
-
->>>>>>> d98915dff767385ef341e9e8e7798c16bf970c27
