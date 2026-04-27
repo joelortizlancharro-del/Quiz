@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
 </head>
-<body id="pagina2"class="bg-gray-900 flex flex-col min-h-screen">
+
+<body id="pagina2" class="bg-gray-900 flex flex-col min-h-screen">
 
     <nav class="bg-gray-800 border-b border-gray-700">
         <div class="max-w-screen-xl flex items-center justify-center mx-auto p-4">
@@ -23,31 +25,36 @@
 
         <ul class="grid w-full max-w-3xl gap-3 grid-cols-2 md:grid-cols-3">
 
-            <li>
+            <li class="categoria">
                 <input type="radio" id="classics-option" value="classics" name="categories" class="hidden peer">
-                <label for="classics-option" class="inline-flex items-start w-full p-4 bg-gray-800 border border-gray-700 rounded-xl cursor-pointer hover:bg-gray-700 peer-checked:border-purple-500 peer-checked:bg-gray-700 transition-colors">
+                <label for="classics-option"
+                    class="inline-flex items-start w-full p-4 bg-gray-800 border border-gray-700 rounded-xl cursor-pointer hover:bg-gray-700 peer-checked:border-purple-500 peer-checked:bg-gray-700 transition-colors">
                     <div class="block">
                         <img src="media/classics_ic.png" class="mb-2 w-8 h-8 sm:w-10 sm:h-10" alt="Clàssics" />
                         <div class="w-full font-semibold text-white text-sm mb-1" id="classics">Clàssics</div>
-                        <div class="w-full text-xs text-gray-400 hidden sm:block">Preguntes sobre jocs clàssics i antics.</div>
+                        <div class="w-full text-xs text-gray-400 hidden sm:block">Preguntes sobre jocs clàssics i
+                            antics.</div>
                     </div>
                 </label>
             </li>
 
-            <li>
+            <li class="categoria">
                 <input type="radio" id="pokemon-option" value="pokemon" name="categories" class="hidden peer">
-                <label for="pokemon-option" class="inline-flex items-start w-full p-4 bg-gray-800 border border-gray-700 rounded-xl cursor-pointer hover:bg-gray-700 peer-checked:border-purple-500 peer-checked:bg-gray-700 transition-colors">
+                <label for="pokemon-option"
+                    class="inline-flex items-start w-full p-4 bg-gray-800 border border-gray-700 rounded-xl cursor-pointer hover:bg-gray-700 peer-checked:border-purple-500 peer-checked:bg-gray-700 transition-colors">
                     <div class="block">
                         <img src="media/pokemon_ic.png" class="mb-2 w-8 h-8 sm:w-10 sm:h-10" alt="Pokémon" />
                         <div class="w-full font-semibold text-white text-sm mb-1" id="pokemon">Pokémon</div>
-                        <div class="w-full text-xs text-gray-400 hidden sm:block">Preguntes sobre el univers de Pokémon.</div>
+                        <div class="w-full text-xs text-gray-400 hidden sm:block">Preguntes sobre el univers de Pokémon.
+                        </div>
                     </div>
                 </label>
             </li>
 
-            <li>
+            <li class="categoria">
                 <input type="radio" id="shooters-option" value="shooters" name="categories" class="hidden peer">
-                <label for="shooters-option" class="inline-flex items-start w-full p-4 bg-gray-800 border border-gray-700 rounded-xl cursor-pointer hover:bg-gray-700 peer-checked:border-purple-500 peer-checked:bg-gray-700 transition-colors">
+                <label for="shooters-option"
+                    class="inline-flex items-start w-full p-4 bg-gray-800 border border-gray-700 rounded-xl cursor-pointer hover:bg-gray-700 peer-checked:border-purple-500 peer-checked:bg-gray-700 transition-colors">
                     <div class="block">
                         <img src="media/shooter_ic.png" class="mb-2 w-8 h-8 sm:w-10 sm:h-10" alt="Shooters" />
                         <div class="w-full font-semibold text-white text-sm mb-1" id="shooters">Shooters</div>
@@ -56,42 +63,49 @@
                 </label>
             </li>
 
-            <li>
+            <li class="categoria">
                 <input type="radio" id="cultura-option" value="cultura" name="categories" class="hidden peer">
-                <label for="cultura-option" class="inline-flex items-start w-full p-4 bg-gray-800 border border-gray-700 rounded-xl cursor-pointer hover:bg-gray-700 peer-checked:border-purple-500 peer-checked:bg-gray-700 transition-colors">
+                <label for="cultura-option"
+                    class="inline-flex items-start w-full p-4 bg-gray-800 border border-gray-700 rounded-xl cursor-pointer hover:bg-gray-700 peer-checked:border-purple-500 peer-checked:bg-gray-700 transition-colors">
                     <div class="block">
                         <img src="media/cultura_ic.png" class="mb-2 w-8 h-8 sm:w-10 sm:h-10" alt="Cultura General" />
                         <div class="w-full font-semibold text-white text-sm mb-1" id="cultura">Cultura General</div>
-                        <div class="w-full text-xs text-gray-400 hidden sm:block">Preguntes sobre cultura general de videojocs.</div>
+                        <div class="w-full text-xs text-gray-400 hidden sm:block">Preguntes sobre cultura general de
+                            videojocs.</div>
                     </div>
                 </label>
             </li>
 
-            <li>
+            <li class="categoria">
                 <input type="radio" id="caos-option" value="caos" name="categories" class="hidden peer">
-                <label for="caos-option" class="inline-flex items-start w-full p-4 bg-gray-800 border border-gray-700 rounded-xl cursor-pointer hover:bg-gray-700 peer-checked:border-purple-500 peer-checked:bg-gray-700 transition-colors">
+                <label for="caos-option"
+                    class="inline-flex items-start w-full p-4 bg-gray-800 border border-gray-700 rounded-xl cursor-pointer hover:bg-gray-700 peer-checked:border-purple-500 peer-checked:bg-gray-700 transition-colors">
                     <div class="block">
                         <img src="media/caos_ic.png" class="mb-2 w-8 h-8 sm:w-10 sm:h-10" alt="CAOS" />
                         <div class="w-full font-semibold text-white text-sm mb-1" id="caos">CAOS</div>
-                        <div class="w-full text-xs text-gray-400 hidden sm:block">Totes les categories combinades en un sol Quiz.</div>
+                        <div class="w-full text-xs text-gray-400 hidden sm:block">Totes les categories combinades en un
+                            sol Quiz.</div>
                     </div>
                 </label>
             </li>
 
         </ul>
-        <button id="modeBtn" class="py-3 rounded-lg bg-purple-600 hover:bg-purple-700 text-white font-semibold transition-colors text-sm width-full sm:width-auto " id="btnComençar">
-            Jugar
+        <button id="modeBtn"
+            class="w-full mt-6 py-3 px-4 bg-purple-600 hover:bg-purple-700 text-white font-semibold rounded-xl transition-colors duration-200 shadow-md">
+            Empezar juego
         </button>
     </main>
 
     <footer class="bg-gray-800 border-t border-gray-700">
         <div class="w-full max-w-screen-xl mx-auto p-4">
             <hr class="my-4 border-gray-700 sm:mx-auto" />
-            <span class="block text-sm text-gray-400 text-center">Joel Ortiz, Albert Castellon, Eric Fradera, Pol Hernaez</span>
+            <span class="block text-sm text-gray-400 text-center">Joel Ortiz, Albert Castellon, Eric Fradera, Pol
+                Hernaez</span>
         </div>
     </footer>
-
+    <script src="script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
     <script src="script.js"></script>
 </body>
+
 </html>
