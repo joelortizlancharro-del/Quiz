@@ -51,6 +51,7 @@ const mostrarPregunta = (question) => {
     // contador pregunta
     document.getElementById("numPregunta").textContent = `Pregunta ${index + 1}`;
     document.getElementById("comptador").textContent = `Pregunta ${index + 1} / ${preguntes.length}`;
+    document.getElementById("progressBar").style.width = `${((index) / preguntes.length) * 100}%`;
 
 // ⏱️ temporizador
 let tiempo = 15;
