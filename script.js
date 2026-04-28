@@ -54,7 +54,7 @@ const mostrarPregunta = (question) => {
 
 // ⏱️ temporizador
 let tiempo = 15;
-display.textContent = tiempo;
+display.textContent = tiempo; 
 
 // limpiamos cualquier temporizador previo
 clearInterval(temporitzador);
