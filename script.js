@@ -4,6 +4,8 @@ let index = 0;
 let puntuacio = 0;
 let temporizador;
 let modeEscollit;
+
+const display = document.getElementById("temporitzador");
 const mode = {
     pokemon: "preguntesPokemon",
     classics: "preguntesClassics",
@@ -16,8 +18,12 @@ const cargarPreguntes = async () => {
         const res = await fetch("data.json");
         const data = await res.json();
         const tematica = localStorage.getItem("modeJoc");
-        preguntes = data[mode[tematica]];
-        console.log(preguntes);
+        if(tematica === "caos"){
+            
+        }else{
+            preguntes = data[mode[tematica]];
+        }
+
     } catch (error) {
         console.error("Error cargando JSON:", error);
     }
@@ -49,16 +55,30 @@ const mostrarPregunta = (question) => {
     // contador pregunta
     document.getElementById("numPregunta").textContent = `Pregunta ${index + 1}`;
     document.getElementById("comptador").textContent = `Pregunta ${index + 1} / ${preguntes.length}`;
+    document.getElementById("progressBar").style.width = `${((index) / preguntes.length) * 100}%`;
 
-    // ⏱️ temporizador
-    temporizador = setTimeout(() => {
+// ⏱️ temporizador
+let tiempo = 15;
+display.textContent = tiempo; 
+
+// limpiamos cualquier temporizador previo
+clearInterval(temporitzador);
+
+temporitzador = setInterval(() => {
+    tiempo--;
+    console.log(tiempo);
+    display.textContent = tiempo;
+
+    if (tiempo <= 0) {
+        clearInterval(temporitzador);
         index++;
         seguentPregunta();
-    }, 15000);
+    }
+}, 1000);
 };
 
 const comprobarRespuesta = (respuestaUsuario, respuestaCorrecta) => {
-    clearTimeout(temporizador);
+    clearInterval(temporizador);
 
     if (respuestaUsuario === respuestaCorrecta) {
         puntuacio += 10;
@@ -70,26 +90,51 @@ const comprobarRespuesta = (respuestaUsuario, respuestaCorrecta) => {
     seguentPregunta();
 };
 
+const randomitzadorRespostes = (respostes) => {
+    let respostesRandom = [];
+    while(respostes.length > 0){
+        let num = Math.floor(Math.random()*respostes.length)
+        let resposta = respostes[num];
+        respostesRandom.push(resposta);
+        respostes.splice(num, 1);
+    }
+    return respostesRandom;
+}
+
+const randomitzadorPreguntes = async () => {
+    let preguntesRandom = [];
+    while(preguntesRandom.length < 30){
+        let num = Math.floor(Math.random()*preguntes.length)
+        let pregunta = preguntes[num];
+        console.log(pregunta);
+        pregunta.opcions = randomitzadorRespostes(pregunta.opcions)
+        preguntesRandom.push(pregunta);
+        preguntes.splice(num, 1);
+    }
+    preguntes = preguntesRandom;
+
+}
+
+
 const seguentPregunta = () => {
     if (index < preguntes.length) {
         mostrarPregunta(preguntes[index]);
     } else {
-        terminarJuego();
+        terminarJoc();
     }
 };
 
-const terminarJuego = () => {
-    const contenedor = document.getElementById("tarjeta");
-    contenedor.innerHTML = `
-        <h2>Juego terminado</h2>
-        <p>Puntuación: ${puntuacio}</p>
-    `;
+const terminarJoc = () => {
+    localStorage.setItem("puntuacioFinal", puntuacio)
+     window.location.href = "index4.html";
 };
 const iniciarJoc = () => {
     index = 0;
     puntuacio = 0;
+    randomitzadorPreguntes();
     seguentPregunta();
 }
+
 
 
 const pagina = document.body.id;
@@ -131,15 +176,15 @@ if (pagina === "pagina1") {
         window.location.href = "index3.html";
     });
 
-    
+
 } else if (pagina === "pagina3") {
 
-
     cargarPreguntes();
+
 } else if (pagina === "pagina4") {
     const nombre = localStorage.getItem("nomJugador");
-    const puntuacionFinal = localStorage.getItem("puntuacionFinal");
+    const puntuacioFinal = localStorage.getItem("puntuacioFinal");
 
     document.getElementById("nomUsuari").textContent = nombre;
-    document.getElementById("puntuacion").textContent = puntuacionFinal;
+    document.getElementById("puntuacio").textContent = puntuacioFinal;
 }
