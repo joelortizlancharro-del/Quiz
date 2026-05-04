@@ -49,7 +49,7 @@ const mostrarPregunta = (question) => {
     // contador pregunta
     document.getElementById("numPregunta").textContent = `Pregunta ${index + 1}`;
     document.getElementById("comptador").textContent = `Pregunta ${index + 1} / ${preguntes.length}`;
-
+    document.getElementById("progressBar").style.width = `${((index) / preguntes.length) * 100}%`;
     // ⏱️ temporizador
     temporizador = setTimeout(() => {
         index++;
@@ -81,7 +81,7 @@ const seguentPregunta = () => {
 const terminarJuego = () => {
     const contenedor = document.getElementById("tarjeta");
     contenedor.innerHTML = `
-        <h2>Juego terminado</h2>
+        <h2>Juego terminado </h2>
         <p>Puntuación: ${puntuacio}</p>
     `;
 };
