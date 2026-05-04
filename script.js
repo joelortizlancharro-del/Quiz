@@ -126,11 +126,12 @@ const seguentPregunta = () => {
 
 const terminarJoc = () => {
     localStorage.setItem("puntuacioFinal", puntuacio)
-     window.location.href = "index4.html";
+    window.location.href = "index4.html";
 };
 const iniciarJoc = () => {
     index = 0;
     puntuacio = 0;
+    localStorage.setItem("puntuacioFinal", puntuacio)
     randomitzadorPreguntes();
     seguentPregunta();
 }
@@ -184,7 +185,6 @@ if (pagina === "pagina1") {
 } else if (pagina === "pagina4") {
     const nombre = localStorage.getItem("nomJugador");
     const puntuacioFinal = localStorage.getItem("puntuacioFinal");
-
     document.getElementById("nomUsuari").textContent = nombre;
     document.getElementById("puntuacio").textContent = puntuacioFinal;
 }
