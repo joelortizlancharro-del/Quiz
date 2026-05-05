@@ -81,14 +81,15 @@ temporitzador = setInterval(() => {
     }
 }, 1000);
 };
-
 const comprobarRespuesta = (respuestaUsuario, respuestaCorrecta) => {
-    clearInterval(temporizador);
+    clearTimeout(temporizador);
 
     if (respuestaUsuario === respuestaCorrecta) {
         puntuacio += 10;
+        localStorage.setItem("correctes", (parseInt(localStorage.getItem("correctes") || 0) + 1));
     } else {
         puntuacio -= 3;
+        localStorage.setItem("incorrectes", (parseInt(localStorage.getItem("incorrectes") || 0) + 1));
     }
 
     index++;
@@ -136,8 +137,8 @@ const terminarJoc = () => {
 const iniciarJoc = () => {
     index = 0;
     puntuacio = 0;
-    localStorage.setItem("puntuacioFinal", puntuacio)
-    randomitzadorPreguntes();
+    localStorage.setItem("correctes", 0);
+    localStorage.setItem("incorrectes", 0);
     seguentPregunta();
 }
 
@@ -191,8 +192,21 @@ if (pagina === "pagina1") {
 
 } else if (pagina === "pagina4") {
     const nombre = localStorage.getItem("nomJugador");
-    const puntuacioFinal = localStorage.getItem("puntuacioFinal");
-    document.getElementById("nomUsuari").textContent = nombre;
-    document.getElementById("puntuacio").textContent = puntuacioFinal;
+    const puntuacionFinal = parseInt(localStorage.getItem("puntuacionFinal")) || 0;
+    const correctes = parseInt(localStorage.getItem("correctes")) || 0;
+    const incorrectes = parseInt(localStorage.getItem("incorrectes")) || 0;
+
+    document.getElementById("puntuacio").textContent = puntuacionFinal;
+    document.getElementById("missatge").textContent = `Molt bé, ${nombre}!`;
+    document.getElementById("submissatge").textContent = `Has encertat ${correctes} de 30 preguntes`;
+    document.getElementById("correctes").textContent = correctes;
+    document.getElementById("incorrectes").textContent = incorrectes;
+    document.getElementById("btnTornar").addEventListener('click', () => {
+    window.location.href = "index3.html";
+});
+
+document.getElementById("btnCategoria").addEventListener('click', () => {
+    window.location.href = "Index2.html";
+});
 }
 
