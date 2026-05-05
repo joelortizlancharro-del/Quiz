@@ -18,8 +18,13 @@ const cargarPreguntes = async () => {
         const res = await fetch("data.json");
         const data = await res.json();
         const tematica = localStorage.getItem("modeJoc");
-        if(tematica === "caos"){
-            
+        if(tematica === "caos"){   
+            preguntes = [
+                ...data.preguntesPokemon,
+                ...data.preguntesClassics,
+                ...data.preguntesShooters,
+                ...data.preguntesCulturaGeneral
+            ];
         }else{
             preguntes = data[mode[tematica]];
         }
