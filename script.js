@@ -131,11 +131,13 @@ if (pagina === "pagina1") {
         window.location.href = "index3.html";
     });
 
-    
-} else if (pagina === "pagina3") {
-
-
+ } else if (pagina === "pagina3") {
     cargarPreguntes();
+    
+    document.getElementById("btnTornar").addEventListener('click', () => {
+        window.location.href = "Index2.html";
+    });
+
 } else if (pagina === "pagina4") {
     const nombre = localStorage.getItem("nomJugador");
     const puntuacionFinal = localStorage.getItem("puntuacionFinal");
@@ -143,3 +145,4 @@ if (pagina === "pagina1") {
     document.getElementById("nomUsuari").textContent = nombre;
     document.getElementById("puntuacion").textContent = puntuacionFinal;
 }
+
