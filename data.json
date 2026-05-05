@@ -21,6 +21,16 @@
             "respostaCorrecta": 1
         },
         {
+    "pregunta": "Quin Pokémon és el guardià dels mars?",
+    "opcions": [
+        "Kyogre",
+        "Lugia",
+        "Lapras",
+        "Vaporeon"
+    ],
+    "respostaCorrecta": 1
+},
+        {
             "pregunta": "Qui és el professor que dona els primers Pokémon als jocs originals?",
             "opcions": [
                 "Professor Oak",
@@ -896,6 +906,16 @@
         "respostaCorrecta": 0
     }
 ], "preguntesCulturaGeneral": [
+    {
+    "pregunta": "Quin és el nom de la consola portàtil clàssica de Nintendo?",
+    "opcions": [
+        "Game Boy",
+        "PSP",
+        "DS Lite",
+        "Atari Lynx"
+    ],
+    "respostaCorrecta": 0
+},
     {
         "pregunta": "Quin és l'empresa creadora de Mario i Zelda?",
         "opcions": [
