@@ -131,9 +131,23 @@ const seguentPregunta = () => {
 };
 
 const terminarJoc = () => {
+
+    let puntuacioMaxima = localStorage.getItem("puntuacioMaxima");
+
+    if(puntuacioMaxima){
+        puntuacioMaxima = Number(puntuacioMaxima);
+    }else {
+        puntuacioMaxima = 0;
+    }
+
+
+    if(puntuacio > puntuacioMaxima){
+        localStorage.setItem("puntuacioMaxima", puntuacio)
+    }
     localStorage.setItem("puntuacioFinal", puntuacio)
     window.location.href = "index4.html";
 };
+
 const iniciarJoc = () => {
     index = 0;
     puntuacio = 0;
@@ -196,6 +210,7 @@ if (pagina === "pagina1") {
     const correctes = parseInt(localStorage.getItem("correctes")) || 0;
     const incorrectes = parseInt(localStorage.getItem("incorrectes")) || 0;
 
+    const puntuacioMaxima = localStorage.getItem("puntuacioMaxima");
     document.getElementById("puntuacio").textContent = puntuacionFinal;
     document.getElementById("missatge").textContent = `Molt bé, ${nombre}!`;
     document.getElementById("submissatge").textContent = `Has encertat ${correctes} de 30 preguntes`;
@@ -208,5 +223,6 @@ if (pagina === "pagina1") {
 document.getElementById("btnCategoria").addEventListener('click', () => {
     window.location.href = "Index2.html";
 });
+    document.getElementById("millorPuntuacio").text = puntuacioMaxima;
 }
 
