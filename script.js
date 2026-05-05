@@ -130,9 +130,23 @@ const seguentPregunta = () => {
 };
 
 const terminarJoc = () => {
+
+    let puntuacioMaxima = localStorage.getItem("puntuacioMaxima");
+
+    if(puntuacioMaxima){
+        puntuacioMaxima = Number(puntuacioMaxima);
+    }else {
+        puntuacioMaxima = 0;
+    }
+
+
+    if(puntuacio > puntuacioMaxima){
+        localStorage.setItem("puntuacioMaxima", puntuacio)
+    }
     localStorage.setItem("puntuacioFinal", puntuacio)
     window.location.href = "index4.html";
 };
+
 const iniciarJoc = () => {
     index = 0;
     puntuacio = 0;
@@ -190,6 +204,8 @@ if (pagina === "pagina1") {
 } else if (pagina === "pagina4") {
     const nombre = localStorage.getItem("nomJugador");
     const puntuacioFinal = localStorage.getItem("puntuacioFinal");
+    const puntuacioMaxima = localStorage.getItem("puntuacioMaxima");
     document.getElementById("nomUsuari").textContent = nombre;
     document.getElementById("puntuacio").textContent = puntuacioFinal;
+    document.getElementById("millorPuntuacio").text = puntuacioMaxima;
 }
